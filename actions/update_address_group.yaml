@@ -1,4 +1,4 @@
-name: update_address_object
+name: update_address_group_object
 pack: fortinet
 runner_type: python-script
 description: "Update Address Group Details"

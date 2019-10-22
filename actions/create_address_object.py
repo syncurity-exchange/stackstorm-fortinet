@@ -5,5 +5,7 @@ class CreateAddressObject(FortinetBaseAction):
     def run(self, name=None, payload=None):
         status = self.device.create_firewall_address(name, payload)
         if status == 200:
-            return (True, status)
-        return (False, status)
+            return True, status
+        elif status == 424:
+            return False, payload
+        return False, status

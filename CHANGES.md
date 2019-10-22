@@ -1,5 +1,11 @@
 # Change Log
 
+## v0.0.5
+
+- removed `()` in returns for py3
+- added py3 to pack.yaml
+- added append_to_address group (requires py3)
+
 ## v0.0.4
 
 - add some read me content for create_address_group action

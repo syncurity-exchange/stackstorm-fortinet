@@ -6,6 +6,4 @@ class CreateAddressObject(FortinetBaseAction):
         status = self.device.create_firewall_address(name, payload)
         if status == 200:
             return True, status
-        elif status == 424:
-            return False, payload
         return False, status

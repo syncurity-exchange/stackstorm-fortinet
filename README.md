@@ -22,6 +22,7 @@ You can also use dynamic values from the datastore. See the
 Example configuration:
 
 ```yaml
+
 ---
   fortinet_ip: "10.10.10.10"
   username: "admin"
@@ -55,3 +56,16 @@ The following actions are supported:
 * ``delete_address_object``
 * ``get_address_object``
 * ``update_address_object``
+
+## Useful examples
+
+Creating an address object is challenging the first time, so here is an example:
+``st2 run fortinet.create_address_object name=testIP7 payload="{'type': 'subnet', 'subnet': '10.254.25.3 255.255.255.255', 'name': 'testIP7'}"``
+
+Notice that the `payload` is a stringified python dictionary. This is key. 
+
+## Troubleshooting
+
+If you get a `http 424 or 500` error, that means your payload likely has a syntax error. There is
+ more
+ info on the [PyFortiAPI site](https://pyfortiapi.readthedocs.io/en/latest/user/common_issues.html).

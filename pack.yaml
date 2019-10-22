@@ -9,3 +9,5 @@ keywords:
 version: 0.0.4
 author: StackStorm, Inc.
 email: info@stackstorm.com
+contributors:
+    - JP Bourget <jp@syncurity.net>

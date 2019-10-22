@@ -4,7 +4,7 @@
 
 - add some read me content for create_address_group action
 - remove `repr` from the create_address_group python action to mitigate http 424 errors, included
- working example in README file. Tested on v6.2.2
+ working example in README file. Tested on v6.2.2 (contribued by JP Bourget <jp@syncurity.net)
 
 ## v0.0.3
 

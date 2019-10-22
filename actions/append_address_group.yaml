@@ -1,4 +1,4 @@
-name: update_address_group_object
+name: append_address_group_object
 pack: fortinet
 runner_type: python-script
 description: "Append Address Group Details. This pulls an existing address group and appends the

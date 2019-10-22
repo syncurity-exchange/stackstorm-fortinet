@@ -8,6 +8,7 @@ class UpdateAddressGroup(FortinetBaseAction):
         new_member = {'name': member, 'q_origin_key': member}
         group_members[0]['member'].append(new_member)
         payload = "{\'member\': " + str(group_members[0]['member']) + "}"
+        print(payload)
         status_code = self.device.update_address_group(name, payload)
         if status_code == 200:
             return True, status_code

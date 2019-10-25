@@ -1,10 +1,17 @@
 name: get_address_group
 pack: fortinet
 runner_type: python-script
-description: "Get Firewall Address Group"
+description: "Get Firewall Address Group. Run with no parameters to get all groups."
 enabled: true
 entry_point: "get_address_group.py"
 parameters:
     name:
         type: string
         description: "name of the address group"
+        position: 0
+        required: False
+    output_format:
+        type: string
+        description: "List of address group object fields to return, separated by `|`. e.g: policyid|srcintf"
+        position: 1
+        required: False

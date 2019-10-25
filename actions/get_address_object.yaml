@@ -10,7 +10,7 @@ parameters:
         description: "name of the address object"
         position: 0
         required: False
-    filter:
+    filters:
         type: string
         description: "Filter values based on Fortinet filter syntax"
         position: 1

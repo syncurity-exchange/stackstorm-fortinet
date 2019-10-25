@@ -1,1 +1,1 @@
-pyfortiapi>=0.1.0
+-e git+https://github.com/jsimpso/PyFortiAPI@02f8dd42c8e598f60d34aa4e4f13c1d24d7e6284#egg=PyFortiAPI

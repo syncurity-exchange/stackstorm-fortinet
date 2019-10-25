@@ -8,3 +8,10 @@ parameters:
     name:
         type: string
         description: "name of the address object"
+        position: 0
+        required: False
+    filter:
+        type: string
+        description: "Filter values based on Fortinet filter syntax"
+        position: 1
+        required: False

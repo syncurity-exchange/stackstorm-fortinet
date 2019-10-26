@@ -1,17 +1,23 @@
-name: get_address_object
+name: find_single_address_object
 pack: fortinet
 runner_type: python-script
-description: "Get Address Object Details"
+description: "Find Single Address Object Details"
 enabled: true
-entry_point: "get_single_address_object.py"
+entry_point: "find_single_address_object.py"
 parameters:
     specific:
         type: string
         description: "name of the address object"
-        position: 0
+        position: 1
         required: False
     filters:
         type: string
         description: "Filter values based on Fortinet filter syntax"
-        position: 1
+        position: 2
         required: False
+    ip_address:
+      type: "string"
+      position: 0
+      required: "true"
+      description: "IP Address to get object details of"
+

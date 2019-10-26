@@ -5,19 +5,20 @@ description: "Find Single Address Object Details"
 enabled: true
 entry_point: "find_single_address_object.py"
 parameters:
-    specific:
-        type: string
-        description: "name of the address object"
-        position: 1
-        required: False
-    filters:
-        type: string
-        description: "Filter values based on Fortinet filter syntax"
-        position: 2
-        required: False
-    ip_address:
-      type: "string"
-      position: 0
-      required: "true"
-      description: "IP Address to get object details of"
+  ip_address:
+    type: "string"
+    position: 0
+    required: true
+    description: "IP Address to get object details of"
+  specific:
+      type: string
+      description: "name of the address object"
+      position: 1
+      required: False
+  filters:
+      type: string
+      description: "Filter values based on Fortinet filter syntax"
+      position: 2
+      required: False
+
 

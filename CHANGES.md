@@ -1,10 +1,13 @@
 # Change Log
 
-## v0.0.5
+## v0.1.0
 
 - removed `()` in returns for py3
 - added py3 to pack.yaml
 - added append_to_address group (requires py3)
+- added action to find single ip address object
+- updated requirements file to pull update v0.1.0 of PyFortiAPI which supports filters
+
 
 ## v0.0.4
 

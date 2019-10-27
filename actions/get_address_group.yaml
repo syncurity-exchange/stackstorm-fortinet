@@ -10,3 +10,8 @@ parameters:
         description: "name of the address group"
         position: 0
         required: False
+    output_format:
+        type: string
+        description: "List of address group object fields to return, separated by `|`. e.g: policyid|srcintf"
+        position: 1
+        required: False

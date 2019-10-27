@@ -10,3 +10,8 @@ parameters:
         description: "name of the address group"
         position: 0
         required: False
+    filters:
+        type: string
+        description: "Filters as defined in the FortiOS API guide. Example: `name==testIP5`"
+        position: 1
+        required: False

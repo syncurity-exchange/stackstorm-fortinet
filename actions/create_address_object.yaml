@@ -11,7 +11,7 @@ parameters:
         required: True
         position: 0
     payload:
-        type: "string"
+        type: "object"
         description: "Address Object configuration"
         required: True
   

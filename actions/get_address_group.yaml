@@ -12,6 +12,6 @@ parameters:
         required: False
     filters:
         type: string
-        description: "Filters as defined in the FortiOS API guide. Example: `name==testIP5`"
+        description: "Filters as defined in the FortiOS API guide. Example: `visibility==enable`"
         position: 1
         required: False

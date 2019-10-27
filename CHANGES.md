@@ -7,7 +7,7 @@
 - added append_to_address group (requires py3)
 - added action to find single ip address object
 - updated requirements file to pull update v0.1.0 of PyFortiAPI which supports filters
-
+- added `find_single_address_object` action to avoid searching in jinja
 
 ## v0.0.4
 

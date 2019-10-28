@@ -8,6 +8,7 @@ class GetSingleAddressObject(FortinetBaseAction):
             if ip_address:
                 for item in addresses:
                     if 'subnet' in item.keys() and ip_address in item.get('subnet'):
+                        item['found'] = True
                         return True, item
                     else:
                         return True, {'status': ip_address + ' not found in address objects',

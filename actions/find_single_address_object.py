@@ -2,8 +2,8 @@ from lib.action import FortinetBaseAction
 
 
 class GetSingleAddressObject(FortinetBaseAction):
-    def run(self, specific=None, filters=None, ip_address=None):
-        addresses = self.device.get_firewall_address(ip_address, specific=specific, filters=filters)
+    def run(self, filters=None, ip_address=None):
+        addresses = self.device.get_firewall_address(specific=ip_address, filters=filters)
         if isinstance(addresses, list):
             if ip_address:
                 for item in addresses:

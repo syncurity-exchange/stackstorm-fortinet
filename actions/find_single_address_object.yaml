@@ -13,7 +13,7 @@ parameters:
   filters:
       type: string
       description: "Filter values based on Fortinet filter syntax"
-      position: 2
+      position: 1
       required: False
 
 

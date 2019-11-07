@@ -13,4 +13,4 @@ class GetSingleAddressObject(FortinetBaseAction):
                     else:
                         return True, {'status': ip_address + ' not found in address objects',
                                       'found': False}
-        return False, addresses
+        return False, addresses.json()

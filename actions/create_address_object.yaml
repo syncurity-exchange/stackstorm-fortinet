@@ -1,7 +1,7 @@
 name: create_address_object
 pack: fortinet
 runner_type: python-script
-description: "Create Address Object Details"
+description: "Create Address Object Details. Returns HTTP Status Code as integer (e.g. 200 or 404)"
 enabled: true
 entry_point: "create_address_object.py"
 parameters:

@@ -1,7 +1,7 @@
 name: create_address_group
 pack: fortinet
 runner_type: python-script
-description: "Create Address Group Details"
+description: "Create Address Group Details."
 enabled: true
 entry_point: "create_address_group.py"
 parameters:
